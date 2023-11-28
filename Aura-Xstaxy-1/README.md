@@ -19,7 +19,7 @@ s|^(trust_hash[[:space:]]+=[[:space:]]+).$|\1"$TRUST_HASH"| ;
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1""|" $HOME/.aura/config/config.toml
 aurad tendermint unsafe-reset-all --home $HOME/.aura --keep-addr-book
 mv $HOME/.aura/priv_validator_state.json.backup $HOME/.aura/data/priv_validator_state.json
-wget -O $HOME/.aura/config/addrbook.json "https://raw.githubusercontent.com/kuatcapital/Active-Testnets/main/Aura-Euphoria/addrbook.json"
+wget -O $HOME/.aura/config/addrbook.json "https://raw.githubusercontent.com/kuatcapital/Service/main/Aura-Xstaxy-1/addrbook.json"
 curl -o - -L https://github.com/kuatcapital/Active-Testnets/new/main/wasm-aura.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/.aura --strip-components 2
 sudo systemctl restart aurad && journalctl -u aurad -f -o cat
 ```
