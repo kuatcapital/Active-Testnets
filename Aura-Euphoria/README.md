@@ -1,6 +1,6 @@
 ```bash
 
-### State Sync
+### State Sync snapshot ### Aura xstaxy-1 
 
 SNAP_RPC=https://rpc.aura.m.sentrynode.xyz:443
 SEEDS="34d759895c5a451488db34c686e74cb954d86723@65.108.135.212:23357"
